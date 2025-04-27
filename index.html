@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Grafik Prakiraan Cuaca Kec. Klojen</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    h2 {
+      margin: auto;
+      text-align: center;
+    }
+    h3 {
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      margin: auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Prakiraan Cuaca Kecamatan Klojen</h2>
+
+  <canvas id="grafikCuaca" width="600" height="300"></canvas>
+
+  <h3>Tabel Prakiraan Cuaca Kec. Klojen</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Tanggal</th>
+        <th>Suhu Maks (°C)</th>
+        <th>Suhu Min (°C)</th>
+        <th>Curah Hujan (mm)</th>
+      </tr>
+    </thead>
+    <tbody id="cuaca-tabel"></tbody>
+  </table>
+
+  <script src="cuaca.js"></script>
+</body>
+</html>
